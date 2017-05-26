@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 project(image_geometry)
-
+SET("OpenCV_DIR" "/home/levi/opencv-2.4.13/build_cuda")
+set(CUDA_USE_STATIC_CUDA_RUNTIME OFF CACHE "" INTERNAL)
 find_package(catkin REQUIRED sensor_msgs)
 find_package(OpenCV REQUIRED)
 
